@@ -1,0 +1,7 @@
+logging:
+  level:
+    root: INFO
+    org.hibernate.SQL: DEBUG
+    org.ehcache: debug
+    org.springframework.cache: trace
+    org.hibernate.cache: debug
