@@ -10,9 +10,9 @@ import com.mgu.cache.entity.CarModel;
 public interface CarModelRepository extends JpaRepository<CarModel, Long> {
     public Optional<CarModel> findById(long id);
     
-    @Cacheable(value = "carmodel", keyGenerator = "CarModelKeyGenerator")
+    @Cacheable(value = "carmodel", keyGenerator = "CarModelKeyGenerator", unless = "#result==null")
     public Optional<CarModel> findByTechnicalId(String technicalId);
     
-    @Cacheable(value = "carmodel", keyGenerator = "CarModelKeyGenerator")
+    @Cacheable(value = "carmodel", keyGenerator = "CarModelKeyGenerator", unless = "#result==null")
     public Optional<CarModel> findByNameAndYear(String name, String year);
 }
