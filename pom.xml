@@ -12,8 +12,8 @@
   <groupId>com.mgu.cache</groupId>
   <artifactId>cache-sample</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>cache-sample</name>
-  <description>Demo project for Spring Boot</description>
+  <name>spring-jpa-cache</name>
+  <description>Attempt to cover a part of JPA with SpringCache</description>
 
   <properties>
     <java.version>1.8</java.version>
